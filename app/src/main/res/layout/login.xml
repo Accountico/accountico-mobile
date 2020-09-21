@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/los_hermanos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+
+    <ImageView
+        android:id="@+id/img_inicial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/los_hermanos" />
+    <TextView
+        android:id="@+id/txt_inicial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:text="@string/bemvindo"
+        android:textColor="@color/colorLetra"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <EditText
+        android:id="@+id/campo_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/campoUsuario"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:hint="Usuário"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorLetra"
+        android:textSize="16dp"
+        /> />
+
+    <EditText
+        android:id="@+id/campo_senha"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/campoSenha"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:ems="20"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorLetra"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="110dp"
+        android:background="@color/btn_login"
+        android:text="Login"
+        android:textSize="20dp"
+        android:textColor="@color/colorLetra"
+        tools:layout_editor_absoluteX=""
+        tools:layout_editor_absoluteY="wrap_content" />
+</LinearLayout>

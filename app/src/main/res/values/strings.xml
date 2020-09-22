@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Los Hermanos</string>
     <string name="bemvindo">Bem Vindo a Los Hermanos! </string>
+    <string name="cadastar">Cadastre-se na Los Hermanos !</string>
+    <string name="action_buscar">Buscar</string>
+    <string name="action_atualizar">Atualizar</string>
+    <string name="action_configuracoes">Configurações</string>
 </resources>

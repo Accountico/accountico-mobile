@@ -24,25 +24,20 @@
         android:textColor="@color/colorLetra"
         android:textSize="25dp"
         tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="257dp" /><![CDATA[
-
-    />
-
-
-
-    ]]>
+        tools:layout_editor_absoluteY="257dp" />
 
     <EditText
         android:id="@+id/campo_usuario"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="50dp"
         android:background="@color/campoUsuario"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
         android:hint="Usuário"
         android:inputType="textPersonName"
         android:textColorHint="@color/colorLetra"
-        android:textSize="16dp" />
+        android:textSize="16dp"
+        /> />
 
     <EditText
         android:id="@+id/campo_senha"

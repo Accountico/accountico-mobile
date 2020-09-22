@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:id="@+id/los_hermanos"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient">
+    android:background="@drawable/gradient"
+    tools:context=".RegisterActivity">
 
 
     <ImageView
@@ -20,52 +20,79 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_margin="15dp"
-        android:text="@string/bemvindo"
+        android:text="@string/register"
         android:textColor="@color/colorLetra"
         android:textSize="25dp"
         tools:layout_editor_absoluteX="78dp"
         tools:layout_editor_absoluteY="257dp" /><![CDATA[
 
-    />
+/>
 
 
 
-    ]]>
+]]>
 
     <EditText
-        android:id="@+id/campo_usuario"
+        android:id="@+id/campo_cadastro_nome"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:background="@color/campoUsuario"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
-        android:hint="Usuário"
+        android:hint="Nome"
         android:inputType="textPersonName"
         android:textColorHint="@color/colorLetra"
         android:textSize="16dp" />
 
     <EditText
-        android:id="@+id/campo_senha"
+        android:id="@+id/campo_cadastro_telefone"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:background="@color/campoSenha"
+        android:layout_marginTop="15dp"
+        android:background="@color/campoUsuario"
         android:drawableLeft="@drawable/ic_action_password"
         android:ems="20"
-        android:hint="Senha"
+        android:hint="Telefone"
         android:inputType="textPassword"
         android:textColorHint="@color/colorLetra"
         />
+
+    <EditText
+        android:id="@+id/campo_cadastro_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/campoUsuario"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:ems="20"
+        android:hint="E-mail"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorLetra"
+        />
+
+    <EditText
+        android:id="@+id/campo_cadastro_senha"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/campoSenha"
+        android:drawableLeft="@drawable/ic_action_password"
+        android:ems="20"
+        android:hint="Criar senha"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorLetra"
+        />
+
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="70dp"
         android:background="@color/btn_login"
-        android:text="Login"
-        android:textSize="20dp"
+        android:text="Cadastrar"
         android:textColor="@color/colorLetra"
+        android:textSize="20dp"
         tools:layout_editor_absoluteX=""
         tools:layout_editor_absoluteY="wrap_content" />
 </LinearLayout>

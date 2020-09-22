@@ -20,22 +20,16 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_margin="15dp"
-        android:text="@string/bemvindo"
+        android:text="@string/cadastar"
         android:textColor="@color/colorLetra"
         android:textSize="25dp"
         tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="257dp" /><![CDATA[
-
-    />
-
-
-
-    ]]>
+        tools:layout_editor_absoluteY="257dp" />
 
     <EditText
         android:id="@+id/campo_usuario"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="50dp"
         android:background="@color/campoUsuario"
         android:drawableLeft="@drawable/ic_action_user"
         android:ems="10"
@@ -43,12 +37,39 @@
         android:inputType="textPersonName"
         android:textColorHint="@color/colorLetra"
         android:textSize="16dp" />
+    <EditText
+        android:id="@+id/campo_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/campoUsuario"
+        android:drawableLeft="@drawable/ic_action_email"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorLetra"
+        android:textSize="16dp"
+        />
+    <EditText
+        android:id="@+id/campo_telefone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/campoUsuario"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:ems="10"
+        android:hint="Telefone"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorLetra"
+        android:textSize="16dp"
+        />
+
 
     <EditText
         android:id="@+id/campo_senha"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:background="@color/campoSenha"
         android:drawableLeft="@drawable/ic_action_password"
         android:ems="20"
@@ -58,19 +79,7 @@
         />
 
     <Button
-        android:id="@+id/btn_login"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="70dp"
-        android:background="@color/btn_login"
-        android:text="Login"
-        android:textSize="20dp"
-        android:textColor="@color/colorLetra"
-        tools:layout_editor_absoluteX=""
-        tools:layout_editor_absoluteY="wrap_content" />
-
-    <Button
-        android:id="@+id/btn_cadastrar"
+        android:id="@+id/btn_cadastrar_user"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -78,7 +87,6 @@
         android:text="Cadastrar"
         android:textSize="20dp"
         android:textColor="@color/colorLetra"
-        android:drawableLeft="@drawable/ic_action_registrer"/>
         tools:layout_editor_absoluteX=""
-        tools:layout_editor_absoluteY="wrap_content"  />
+        tools:layout_editor_absoluteY="wrap_content" />
 </LinearLayout>

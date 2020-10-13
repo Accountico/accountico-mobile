@@ -24,13 +24,7 @@
         android:textColor="@color/colorLetra"
         android:textSize="25dp"
         tools:layout_editor_absoluteX="78dp"
-        tools:layout_editor_absoluteY="257dp" /><![CDATA[
-
-    />
-
-
-
-    ]]>
+        tools:layout_editor_absoluteY="257dp" />
 
     <EditText
         android:id="@+id/campo_usuario"

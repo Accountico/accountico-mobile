@@ -19,10 +19,11 @@ class MainActivity : DegubActivity() {
             var intent = Intent(this, TelaInicialActivity::class.java)
             startActivity(intent)
 
-            btn_cadastrar.setOnClickListener {
-                var intent = Intent(this, RegisterUserActivity::class.java)
-                startActivity(intent)
+
             }
+        btn_cadastrar.setOnClickListener {
+            var intent = Intent(this, RegisterUserActivity::class.java)
+            startActivity(intent)
         }
         }
     }

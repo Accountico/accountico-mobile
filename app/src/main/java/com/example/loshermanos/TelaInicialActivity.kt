@@ -11,10 +11,14 @@ import androidx.appcompat.widget.SearchView
 import androidx.appcompat.widget.Toolbar
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.core.view.GravityCompat
 import com.example.loshermanos.DegubActivity
 import com.example.loshermanos.R
+import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_tela_inicial.*
-
+import kotlinx.android.synthetic.main.navigation_menu.*
+import kotlinx.android.synthetic.main.toolbar.*
 
 
 class TelaInicialActivity : DegubActivity() {
@@ -23,6 +27,8 @@ class TelaInicialActivity : DegubActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tela_inicial)
+
+        this.generic_layout = layoutMenuLateral
 
         // acessar parametros da intnet
         // intent é um atributo herdado de Activity
@@ -39,19 +45,33 @@ class TelaInicialActivity : DegubActivity() {
         mensagemInicial.text = "Bem vindo Ao Los Hermanos"
 
         botaoSair.setOnClickListener {cliqueSair()}
+        btn_pedido.setOnClickListener{fazerPedido()}
 
+
+        setSupportActionBar(toolbar)
         // alterar título da ActionBar
-        supportActionBar?.title = "Cardápio"
+        supportActionBar?.title = "Inicio"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        configuraMenuLateral()
+
+
 
 
     }
+
     fun cliqueSair(){
         val returnIntent = Intent();
         returnIntent.putExtra("result","Saída do BrewerApp");
         setResult(Activity.RESULT_OK,returnIntent);
         finish();
     }
+
+    fun fazerPedido(){
+        val int = Intent(this, PedidosActivity::class.java)
+        startActivity(int)
+    }
+
+
 
     // método sobrescrito para inflar o menu na Actionbar
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -68,7 +88,7 @@ class TelaInicialActivity : DegubActivity() {
 
             override fun onQueryTextSubmit(query: String): Boolean {
                 // ação  quando terminou de buscar e enviou
-                return false
+                return true
             }
 
         })

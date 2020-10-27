@@ -41,8 +41,18 @@ class MeusPedidosActivity : DegubActivity() {
     var pedido = listOf<MeusPedidos>()
 
     fun taskPedidos(){
+<<<<<<< HEAD
+        Thread{
+            this.pedido = MeusPedidosService.getPedidos()
+            runOnUiThread { recyclerPedido?.adapter =
+                    MeusPedidosAdapter(this.pedido)
+                    {onClickPedido(it)}
+            }
+            }.start()
+=======
         this.pedido = MeusPedidosService.getPedidos()
         recyclerPedido?.adapter = MeusPedidosAdapter(this.pedido) {onClickPedido(it)}
+>>>>>>> ddc150635d81b3b7d6415845abd7b4f4f8f78de2
     }
     fun onClickPedido(pedido:MeusPedidos){
         val it = Intent(this, DescricaoPedido::class.java)

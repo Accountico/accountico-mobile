@@ -50,6 +50,15 @@
         android:inputType="textPassword"
         android:textColorHint="@color/colorLetra"
         />
+    <CheckBox
+        android:id="@+id/checkLembrar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Lembrar Login"
+        android:textSize="10dp"
+
+        />
 
     <Button
         android:id="@+id/btn_login"
@@ -73,6 +82,7 @@
         android:textSize="20dp"
         android:textColor="@color/colorLetra"
         android:drawableLeft="@drawable/ic_action_registrer"/>
-        tools:layout_editor_absoluteX=""
-        tools:layout_editor_absoluteY="wrap_content"  />
+
+
+
 </LinearLayout>

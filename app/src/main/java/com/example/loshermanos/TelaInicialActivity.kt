@@ -53,6 +53,11 @@ class TelaInicialActivity : DegubActivity() {
         supportActionBar?.title = "Inicio"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         configuraMenuLateral()
+<<<<<<< HEAD
+        val cliente = Prefs.getString("cliente")
+        Toast.makeText(this, cliente, Toast.LENGTH_LONG).show()
+=======
+>>>>>>> ddc150635d81b3b7d6415845abd7b4f4f8f78de2
 
 
 

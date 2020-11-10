@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "818810764659",
+    "firebase_url": "https://loshermanos-pizzaria.firebaseio.com",
+    "project_id": "loshermanos-pizzaria",
+    "storage_bucket": "loshermanos-pizzaria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818810764659:android:a47e04602b0e0b27055906",
+        "android_client_info": {
+          "package_name": "com.example.loshermanos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818810764659-stsq20697d9c8apl1sc1ncbftvfhfv6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcN-4tMIlvtAgg1g-tQZWW-2006Ap15QY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818810764659-stsq20697d9c8apl1sc1ncbftvfhfv6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

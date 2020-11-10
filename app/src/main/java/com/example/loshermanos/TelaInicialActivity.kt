@@ -53,16 +53,16 @@ class TelaInicialActivity : DegubActivity() {
         supportActionBar?.title = "Inicio"
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         configuraMenuLateral()
-<<<<<<< HEAD
+
         val cliente = Prefs.getString("cliente")
         Toast.makeText(this, cliente, Toast.LENGTH_LONG).show()
-=======
->>>>>>> ddc150635d81b3b7d6415845abd7b4f4f8f78de2
 
 
 
 
     }
+
+
 
     fun cliqueSair(){
         val returnIntent = Intent();
@@ -115,7 +115,12 @@ class TelaInicialActivity : DegubActivity() {
         // botão up navigation
         else if (id == android.R.id.home) {
             finish()
+        }else if (id == R.id.pedido_novo){
+            val it = Intent(this, PedidosActivity::class.java)
+            startActivity(it)
         }
+
+
         return super.onOptionsItemSelected(item)
     }
 

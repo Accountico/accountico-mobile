@@ -41,22 +41,34 @@ class MeusPedidosActivity : DegubActivity() {
     var pedido = listOf<MeusPedidos>()
 
     fun taskPedidos(){
-<<<<<<< HEAD
+
         Thread{
             this.pedido = MeusPedidosService.getPedidos()
-            runOnUiThread { recyclerPedido?.adapter =
+            runOnUiThread {
+                recyclerPedido?.adapter =
                     MeusPedidosAdapter(this.pedido)
-                    {onClickPedido(it)}
-            }
+                        {onClickPedido(it)
+                        }
+                enviaNotificacao((this.pedido[0]))
+                }
             }.start()
-=======
+
         this.pedido = MeusPedidosService.getPedidos()
         recyclerPedido?.adapter = MeusPedidosAdapter(this.pedido) {onClickPedido(it)}
->>>>>>> ddc150635d81b3b7d6415845abd7b4f4f8f78de2
+
     }
-    fun onClickPedido(pedido:MeusPedidos){
+
+    fun enviaNotificacao(pedidos: MeusPedidos){
+        val intent = Intent(this, PedidosActivity::class.java)
+        intent.putExtra("pedido", pedidos)
+
+        NotificationUtil.create(1, intent, "Los Hermanos Pizzaria", "Você tem pendências no ${pedidos.nome}")
+    }
+
+
+    fun onClickPedido(pedidos:MeusPedidos){
         val it = Intent(this, DescricaoPedido::class.java)
-        it.putExtra("Seu Pedido", pedido)
+        it.putExtra("Seu Pedido", pedidos)
         startActivity(it)
 
 

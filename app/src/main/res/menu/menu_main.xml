@@ -9,6 +9,10 @@
         android:icon="@drawable/ic_action_search"
         app:actionViewClass="androidx.appcompat.widget.SearchView"/>
     <item
+        android:id="@+id/pedido_novo"
+        android:icon="@drawable/ic_add"
+        android:title="@string/action_fazer_pedido"/>
+    <item
         android:id="@+id/action_atualizar"
         android:title="@string/action_atualizar"
         app:showAsAction ="ifRoom"

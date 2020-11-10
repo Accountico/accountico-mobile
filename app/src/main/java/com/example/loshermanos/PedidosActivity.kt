@@ -17,6 +17,21 @@ class PedidosActivity : DegubActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         configuraMenuLateral()
 
+        btn_fzr_pedido.setOnClickListener{
+            val p = MeusPedidos()
+            p.nome = nome_cliente.text.toString()
+            p.sabor = sabor_cliente.text.toString()
+            p.valor = valor_total.text.toString()
+            p.data = data_pedido.text.toString()
+            p.foto = foto_pedido.text.toString()
+            Thread{
+                MeusPedidosService.savePedido(p)
+                runOnUiThread {
+                    finish()
+                }
+            }.start()
+        }
+
 
     }
 

@@ -1,6 +1,6 @@
 package com.example.loshermanos
 
-<<<<<<< HEAD
+
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
@@ -21,7 +21,7 @@ object MeusPedidosService {
         return Gson().fromJson<T>(json, type)
     }
 
-=======
+
 object MeusPedidosService {
 
     fun getPedidos(): List<MeusPedidos>{
@@ -39,5 +39,5 @@ object MeusPedidosService {
         }
         return pedidos
     }
->>>>>>> ddc150635d81b3b7d6415845abd7b4f4f8f78de2
+    }
 }

@@ -11,4 +11,9 @@
     <string name="nav_sair">Sair</string>
     <string name="nav_abrir">Abrir</string>
     <string name="nav_fechar">Fechar</string>
+    <string name="action_fazer_pedido">Fazer Pedido</string>
+    <string name="API_KEY">AIzaSyCz7U2O3Lsqc18-IyTpz4ujGLQm22iUxEI</string>
+    <string name="nav_location">Localização</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

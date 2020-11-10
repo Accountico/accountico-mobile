@@ -61,6 +61,10 @@ open class DegubActivity : AppCompatActivity(),NavigationView.OnNavigationItemSe
                 startActivity(intente)
 
             }
+            R.id.nav_location ->{
+                val intent = Intent(this, MapasActivity::class.java)
+                startActivity(intent)
+            }
         }
         generic_layout?.closeDrawer(GravityCompat.START)
         return true

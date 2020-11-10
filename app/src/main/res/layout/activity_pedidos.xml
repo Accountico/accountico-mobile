@@ -13,12 +13,57 @@
         android:orientation="vertical">
         <include layout="@layout/toolbar" />
 
-        <Button
-            android:id="@+id/fzr_pedido"
+        <EditText
+            android:id="@+id/nome_cliente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:text="Fazer Pedido" />
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:hint="Nome"/>
+
+        <EditText
+            android:id="@+id/sabor_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:hint="Sabor"/>
+
+        <EditText
+            android:id="@+id/valor_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:hint="Valor"/>
+
+
+        <EditText
+            android:id="@+id/data_pedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="Data"/>
+        <EditText
+            android:id="@+id/foto_pedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:hint="Foto"/>
+        <Button
+            android:id="@+id/btn_fzr_pedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fazer Pedido"
+            android:textSize="30dp" />
+
+
     </LinearLayout>
 
     <include layout="@layout/navigation_menu" />
